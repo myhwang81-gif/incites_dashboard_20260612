@@ -376,7 +376,7 @@ else:
         fig = go.Figure()
         fig.add_trace(go.Scatterpolar(
             r=pct_closed, theta=cats_closed, fill="toself",
-            fillcolor=(COLOR_HIGHLIGHT if is_highlight else COLOR_OTHER) + "33",
+            fillcolor="rgba(232,57,42,0.2)" if is_highlight else "rgba(147,184,224,0.2)",
             line_color=COLOR_HIGHLIGHT if is_highlight else COLOR_OTHER,
             line_width=2.5,
             name=target,
